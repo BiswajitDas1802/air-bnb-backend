@@ -20,13 +20,6 @@ router.get("", async (req, res) => {
   }
 });
 
-// router.get("/:city", async (req, res) => {
-//   try {
-//     let place = req.params.city;
-//     let data = await hotel.find({ city: place });
-//     return res.send(data);
-//   } catch (error) {}
-// });
 router.get("/:city/:id", async (req, res) => {
   try {
     let id = req.params.id;
