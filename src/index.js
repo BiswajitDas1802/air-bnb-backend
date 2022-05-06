@@ -43,7 +43,7 @@ app.get(
   }
 );
 
-app.listen(port, async (req, res) => {
+app.listen(process.env.PORT || port, async (req, res) => {
   try {
     await connect();
     console.log("port " + port);
